@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development</title>
+            <h1>Introduction to Web Development</h1>
+
+    <ul>
+        <li><a href="Day1.html">Internet Working</a></li>
+        <li>   <a href="day2.html">day2</a></li>
+        <li><a href="Day3.html">3</a></li>
+        <li><a href="Day4.html">4</a></li>
+    </ul>
+</head>
+<body>
+    
+    <body>
+        <h2>Internet Basics</h2>
+        <ol>
+            <li>
+                <h3>Principles of the Internet</h3>
+               <ul>
+                <li>Need to Share Information:- Computers exchange data through direct links (cables, signals of 1s & 0s).</li>
+               </ul>
+               <ul><li>Problem of Scale:- Many-to-many links become messy → solved by Switches (Local Networks).</li></ul>
+               <ul><li>Connecting Networks:- Multiple local networks connect using Routers → forms a network of networks (Internet).</li></ul>
+               <ul><li>Finding Devices (Addressing):- Each device needs a unique IP Address to communicate.</li></ul>
+               <ul><li>Reliability & Fairness:
+Data broken into packets with sender/receiver info, reassembled via TCP/IP protocol.</li></ul>
+            </li>
+            <li>
+                 <h3>Ip Address</h3>
+                 <ul><li>IPv4: 32-bit (e.g., 172.217.16.142) → ~4.3 billion addresses → shortage problem.</li></ul>
+                 <ul><li>Public IP: Globally unique, assigned by ISP, used to access internet.</li></ul>
+                 <ul><li>Private IP: Used inside local networks (192.168.x.x, 10.x.x.x, 172.16-31.x.x).</li></ul>
+            </li>
+            <li>
+                <h3>MAC Address</h3>
+                <ul><li>Unique 48-bit hardware ID of a device's network card.</li></ul>
+                <ul><li>Written in hex (e.g., 3C:22:FB:A3:B4:C5).</li></ul>
+                <ul><li>Permanent, unlike IP which can change.</li></ul>
+                <ul><li>Found via commands (ipconfig /all, getmac /v, ifconfig).</li></ul>
+                
+            </li>
+            <li>
+                <h3>Port Numbers</h3>
+                <ul><li>16-bit identifier (0–65535) to specify services.</li></ul>
+               <ul><li>Well-Known Ports (0–1023): Standard services (HTTP 80, HTTPS 443, DNS 53, SSH 22).</li></ul>
+               <ul><li>Registered Ports (1024–49151): Used by apps/databases (Node.js 3000, MySQL 3306, MongoDB 27017).</li></ul>
+               <ul><li>Dynamic Ports (49152–65535): Temporary client-side connections.</li></ul>
+            </li>
+            <li>
+                <h3>DNS (Domain Name System)</h3>
+                <ul><li>Converts domain names → IP addresses.</li></ul>
+                <ul><li>Process:</li>
+                <ol>
+                    <li>Check local cache (browser, OS, router).</li>
+                    <li>
+                       Ask Recursive Resolver (usually ISP or public like Google 8.8.8.8). 
+                    </li>
+                    <li>Resolver queries DNS hierarchy:
+                        <ul>
+                            <li>Root Servers → point to TLD servers (e.g., .com)u</li>
+                            <li>TLD Servers → point to Authoritative servers.</li>
+                            <li>Authoritative Server → gives final IP.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Resolver caches response & sends IP to browser.
+                    </li>
+                    <li>
+                        Browser connects to IP (usually via port 80/443) and loads the website.
+                    </li>
+                </ol>
+                
+                </ul>
+            </li>
+
+        </ol>
+    </body>
+    <footer></footer>
+</body>
+</html>

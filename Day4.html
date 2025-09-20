@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+</head>
+<body>
+    <table width="100%" cellpadding="20" cellspacing="0" border="2">
+        <tr>
+            <td>
+                <header>
+                    <center>
+                        <h1><u>Audio & Video</u></h1>
+                   
+                    
+                         <table border="1" cellpadding="8" cellspacing="2" width="60%">
+                            <tr>
+                                <td align="center"><strong><a href="index.html"> Internet Working</a></strong></td>
+                                <td align="center"><strong><a href="day1.html"> HTML: Hyper Text Markup Language</a></strong></td>
+                                <td align="center"><a href="day2.html"> File Path | Boilerplate | Div + Class + ID </a></td>
+                                <td align="center"><a href="Day3.html"> HTML Forms </a></td>
+                                <td align="center"><a href="Day4.html"> Audio & Video</a></td>
+                            </tr>
+                        </table>
+                    </center>
+                    <hr size="4">
+                </header>
+
+                <main>
+                    <fieldset>
+                        <legend><h2><strong>Basic Audio & Video Tags</strong></h2></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3><u>Basic Implementation:</u></h3>
+                                    <pre>
+&lt;audio src="./song.mp3" controls&gt;&lt;/audio&gt;
+&lt;video src="./video.mp4" height="200" controls&gt;&lt;/video&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>Attributes Explanation:</u></h3>
+                        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="25%">Tag/Attribute</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>&lt;audio&gt; / &lt;video&gt;</strong></td>
+                                    <td>Used to play sound and video files.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>controls</strong></td>
+                                    <td>Adds play, pause, and volume buttons.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>src</strong></td>
+                                    <td>Path of the file (local or online).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>height / width</strong></td>
+                                    <td>Controls the media size.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Best Practice Section -->
+                    <fieldset>
+                        <legend><h2><strong>Best Practice - Using &lt;source&gt; Tag</strong></h2></legend>
+                        
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3><u>Recommended Implementation:</u></h3>
+                                    <pre>
+&lt;audio controls&gt;
+  &lt;source src="./song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+&lt;video controls height="200"&gt;
+  &lt;source src="./video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <blockquote>
+                            <h3><u>Why Use &lt;source&gt; Tag?</u></h3>
+                            <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="30%">Reason</th>
+                                        <th>Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Multiple Formats</strong></td>
+                                        <td>You can add multiple formats (mp3, ogg, wav for audio / mp4, webm for video).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Better Compatibility</strong></td>
+                                        <td>Browser picks the format it supports → <strong>better compatibility</strong>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </blockquote>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- YouTube Embedding Section -->
+                    <fieldset>
+                        <legend><h2><strong>4. Embedding YouTube Videos</strong></h2></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3><u>YouTube Embed Code:</u></h3>
+                                    <pre>
+&lt;iframe src="https://www.youtube.com/embed/NGYp1zCBthk"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://youtube.com/embed/NGYp1zCBthk?si=BxL_jZO6xbBEtfRv" allowfullscreen&gt;&lt;/iframe&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>iframe Attributes:</u></h3>
+                        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="25%">Attribute</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>&lt;iframe&gt;</strong></td>
+                                    <td>Used to embed content from another website (like YouTube, Google Maps).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>allowfullscreen</strong></td>
+                                    <td>Lets users watch in full screen.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Multipage Website Section -->
+                    <fieldset>
+                        <legend><h2><strong>5. Multipage Website (Navigation)</strong></h2></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3><u>Navigation Structure:</u></h3>
+                                    <pre>
+&lt;header&gt;
+  &lt;h1&gt;This is our home Page&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;HomePage&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="course.html"&gt;Course&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About us&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/header&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>Navigation Elements:</u></h3>
+                        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Element</th>
+                                    <th>Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>&lt;header&gt;</strong></td>
+                                    <td>Top section (title, navigation menu).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt;ul&gt;</strong></td>
+                                    <td>Unordered list (bullet points).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt;li&gt;</strong></td>
+                                    <td>Each menu item.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt;a href="..."&gt;</strong></td>
+                                    <td>Link to another page (index.html, about.html, etc.). This creates a <strong>multi-page website</strong>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Main Content Section -->
+                    <fieldset>
+                        <legend><h2><strong>6. Main Content</strong></h2></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3><u>Main Content Structure:</u></h3>
+                                    <pre>
+&lt;main&gt;
+  &lt;h2&gt;This is our course selling website&lt;/h2&gt;
+  &lt;img src="..." alt="course image"&gt;
+&lt;/main&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>Main Content Elements:</u></h3>
+                        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Element</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>&lt;main&gt;</strong></td>
+                                    <td>Holds the main content of the page.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt;h2&gt;</strong></td>
+                                    <td>Sub-heading.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt;img&gt;</strong></td>
+                                    <td>Displays an image.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>src="data:image/jpeg;base64,..."</strong></td>
+                                    <td>Example of an <strong>inline image</strong> (encoded inside HTML instead of separate file).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Summary Section -->
+                    <center>
+                        <fieldset>
+                            <legend><h3><strong>Media & Navigation Quick Reference</strong></h3></legend>
+                            <table border="2" cellpadding="12" cellspacing="1" width="90%">
+                                <thead>
+                                    <tr>
+                                        <th width="20%">Category</th>
+                                        <th width="25%">Key Elements</th>
+                                        <th>Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Audio/Video</strong></td>
+                                        <td>&lt;audio&gt;, &lt;video&gt;, &lt;source&gt;</td>
+                                        <td>Embed multimedia content with browser compatibility</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>YouTube</strong></td>
+                                        <td>&lt;iframe&gt;</td>
+                                        <td>Embed external video content</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Navigation</strong></td>
+                                        <td>&lt;header&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;a&gt;</td>
+                                        <td>Create multi-page website structure</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Content</strong></td>
+                                        <td>&lt;main&gt;, &lt;h2&gt;, &lt;img&gt;</td>
+                                        <td>Organize main page content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </center>
+
+                </main>
+
+                <br><br>
+                <footer>
+                    <hr size="3">
+                    <center>
+                        <p><strong>HTML Media & Navigation - Complete Guide</strong></p>
+                    </center>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

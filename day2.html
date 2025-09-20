@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File path | Boilerplate | Div + Class + id</title>
+</head>
+<body>
+    <table width="100%" cellpadding="20" cellspacing="0" border="2">
+        <tr>
+            <td>
+                <header>
+                    <center>
+                        <h1><u>File Path | Boilerplate | Div + Class + ID</u></h1>
+                    </center>
+                     <table border="1" cellpadding="8" cellspacing="2" width="60%">
+                            <tr>
+                                <td align="center"><strong><a href="Day1.html"> Internet Working</a></strong></td>
+                                <td align='center'> <a href="Day1.html">Day 1</a></td>
+                                <td align="center"><a href="day2.html"> Day 2</a></td>
+                                <td align="center"><a href="Day3.html"> Day 3</a></td>
+                                <td align="center"><a href="Day4.html"> Day 4</a></td>
+                                
+                            </tr>
+                        </table>
+                    <hr size="4">
+                </header>
+
+                <main>
+                    <!-- Boilerplate Section -->
+                    <fieldset>
+                        <legend><h2><strong>Boilerplate</strong></h2></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>In web development, boilerplate means the basic, standard code template that every HTML page usually starts with.</li>
+                                        <li>It gives your web page a proper structure and ensures browsers understand it correctly.</li>
+                                    </ul>
+                                    
+                                    <p>Think of it like a foundation of a house - before you decorate or add things, you need the basic frame.</p>
+                                    
+                                    <img src="image/boilerplate.png" alt="Boilerplate">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>Explanation of Each Part</u></h3>
+                        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="10%">Part</th>
+                                    <th width="30%">Code Element</th>
+                                    <th>Purpose & Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1</strong></td>
+                                    <td><strong>&lt;!DOCTYPE html&gt;</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Tells the browser that this is an HTML5 document.</li>
+                                            <li>Ensures the page is rendered in standard mode (not old compatibility mode).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2</strong></td>
+                                    <td><strong>&lt;html lang="en"&gt;</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Root element of the page.</li>
+                                            <li><strong>lang="en"</strong> tells the browser (and search engines, screen readers) the page is in English.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3</strong></td>
+                                    <td><strong>&lt;head&gt; Section</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>&lt;meta charset="UTF-8"&gt; Ensures the page supports all characters (like English, Hindi, emojis 😊).</li>
+                                            <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4</strong></td>
+                                    <td><strong>&lt;body&gt; Section</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Contains the content visible to users (text, images, videos, links, etc.).</li>
+                                            <li>Example: headings, paragraphs, forms, buttons, etc.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <blockquote>
+                            <h3><u>Why is Boilerplate Important?</u></h3>
+                            <ul>
+                                <li>Saves time ⏳ (you don't have to write the basic structure every time).</li>
+                                <li>Makes your page work correctly in all browsers.</li>
+                                <li>Ensures SEO-friendly and responsive pages.</li>
+                            </ul>
+                        </blockquote>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- File Path System Section -->
+                    <fieldset>
+                        <legend><h2><strong>File Path System</strong></h2></legend>
+                        
+                        <h3><u>What is a File Path?</u></h3>
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>A file path tells the browser where to find a file (like HTML, CSS, JavaScript, image, video, etc.).</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><u>Types of File Path</u></h3>
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Path Type</th>
+                                    <th>Description & Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Absolute Path</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Path relative to the current file location (most common in web development).</li>
+                                            <li>Example (Assume index.html and style.css are in the same folder):</li>
+                                        </ul>
+                                        <p>Example: <strong>&lt;link rel="stylesheet" href="style.css"&gt;</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Relative Path</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>A relative file path points to a file relative to the current page.</li>
+                                            <li>In the following example, the file path points to a file in the images folder located at the root of the current website:</li>
+                                        </ul>
+                                        <p><strong>Example:</strong> &lt;img src="/images/picture.jpg" alt="Mountain"&gt;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Div Section -->
+                    <fieldset>
+                        <legend><h3><strong>What is &lt;Div&gt; in HTML</strong></h3></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><strong>&lt;div&gt;</strong> means division.</li>
+                                        <li>It is a container element that groups other HTML elements together.</li>
+                                        <li>By default, <strong>&lt;div&gt;</strong> does not change the look of the content — it's mainly used for layout and styling with CSS or scripting with JavaScript.</li>
+                                    </ul>
+                                    
+                                    <p>Example: 
+                                        <img src="image/div.png" alt="">
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Class Section -->
+                    <fieldset>
+                        <legend><h3><strong>Class in HTML</strong></h3></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Class is an attribute you can give to HTML elements.</li>
+                                        <li>You use it when multiple elements should share the same style.</li>
+                                        <li>You use it when multiple elements should share the same style.</li>
+                                    </ul>
+                                    
+                                    <p>Example
+                                        <img src="image/class.png" alt="">
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- ID Section -->
+                    <fieldset>
+                        <legend><h3><strong>ID in HTML</strong></h3></legend>
+                        
+                        <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>ID is also an attribute, but it should be unique (used only once per page).</li>
+                                        <li>It is used when you want to target one specific element for styling or JavaScript.</li>
+                                    </ul>
+                                    
+                                    <p><img src="image/id.png" alt=""></p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <blockquote>
+                            <h4><u>Quick Summary</u></h4>
+                            <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="20%">Attribute</th>
+                                        <th width="30%">When to Use</th>
+                                        <th>Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Class</strong></td>
+                                        <td>You want to apply the same style to multiple elements.</td>
+                                        <td>All buttons, all paragraphs, all sections.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ID</strong></td>
+                                        <td>You want to style or target one unique element.</td>
+                                        <td>The navbar, footer, or one special heading.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </blockquote>
+                    </fieldset>
+
+                </main>
+
+                <br><br>
+                <footer>
+                    <hr size="3">
+                    <center>
+                        <p><strong>HTML Structure & Organization - Advanced Concepts</strong></p>
+                    </center>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

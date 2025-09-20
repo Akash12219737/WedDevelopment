@@ -4,81 +4,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to Web Development</title>
-            <h1>Introduction to Web Development</h1>
-
-    <ul>
-        <li><a href="Day1.html">Internet Working</a></li>
-        <li>   <a href="day2.html">day2</a></li>
-        <li><a href="Day3.html">3</a></li>
-        <li><a href="Day4.html">4</a></li>
-    </ul>
 </head>
 <body>
-    
-    <body>
-        <h2>Internet Basics</h2>
-        <ol>
-            <li>
-                <h3>Principles of the Internet</h3>
-               <ul>
-                <li>Need to Share Information:- Computers exchange data through direct links (cables, signals of 1s & 0s).</li>
-               </ul>
-               <ul><li>Problem of Scale:- Many-to-many links become messy → solved by Switches (Local Networks).</li></ul>
-               <ul><li>Connecting Networks:- Multiple local networks connect using Routers → forms a network of networks (Internet).</li></ul>
-               <ul><li>Finding Devices (Addressing):- Each device needs a unique IP Address to communicate.</li></ul>
-               <ul><li>Reliability & Fairness:
-Data broken into packets with sender/receiver info, reassembled via TCP/IP protocol.</li></ul>
-            </li>
-            <li>
-                 <h3>Ip Address</h3>
-                 <ul><li>IPv4: 32-bit (e.g., 172.217.16.142) → ~4.3 billion addresses → shortage problem.</li></ul>
-                 <ul><li>Public IP: Globally unique, assigned by ISP, used to access internet.</li></ul>
-                 <ul><li>Private IP: Used inside local networks (192.168.x.x, 10.x.x.x, 172.16-31.x.x).</li></ul>
-            </li>
-            <li>
-                <h3>MAC Address</h3>
-                <ul><li>Unique 48-bit hardware ID of a device's network card.</li></ul>
-                <ul><li>Written in hex (e.g., 3C:22:FB:A3:B4:C5).</li></ul>
-                <ul><li>Permanent, unlike IP which can change.</li></ul>
-                <ul><li>Found via commands (ipconfig /all, getmac /v, ifconfig).</li></ul>
-                
-            </li>
-            <li>
-                <h3>Port Numbers</h3>
-                <ul><li>16-bit identifier (0–65535) to specify services.</li></ul>
-               <ul><li>Well-Known Ports (0–1023): Standard services (HTTP 80, HTTPS 443, DNS 53, SSH 22).</li></ul>
-               <ul><li>Registered Ports (1024–49151): Used by apps/databases (Node.js 3000, MySQL 3306, MongoDB 27017).</li></ul>
-               <ul><li>Dynamic Ports (49152–65535): Temporary client-side connections.</li></ul>
-            </li>
-            <li>
-                <h3>DNS (Domain Name System)</h3>
-                <ul><li>Converts domain names → IP addresses.</li></ul>
-                <ul><li>Process:</li>
-                <ol>
-                    <li>Check local cache (browser, OS, router).</li>
-                    <li>
-                       Ask Recursive Resolver (usually ISP or public like Google 8.8.8.8). 
-                    </li>
-                    <li>Resolver queries DNS hierarchy:
-                        <ul>
-                            <li>Root Servers → point to TLD servers (e.g., .com)u</li>
-                            <li>TLD Servers → point to Authoritative servers.</li>
-                            <li>Authoritative Server → gives final IP.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Resolver caches response & sends IP to browser.
-                    </li>
-                    <li>
-                        Browser connects to IP (usually via port 80/443) and loads the website.
-                    </li>
-                </ol>
-                
-                </ul>
-            </li>
+    <table width="100%" cellpadding="20" cellspacing="0" border="2">
+        <tr>
+            <td>
+                <header>
+                    <center>
+                        <h1><u> Introduction to Web Development </u></h1>
+                        
+                        <table border="1" cellpadding="8" cellspacing="2" width="60%">
+                            <tr>
+                                <td align="center"><strong><a href="Day1.html"> Internet Working</a></strong></td>
+                                <td align='center'> <a href="Day1.html">Day 1</a></td>
+                                <td align="center"><a href="day2.html"> Day 2</a></td>
+                                <td align="center"><a href="Day3.html"> Day 3</a></td>
+                                <td align="center"><a href="Day4.html"> Day 4</a></td>
+                                
+                            </tr>
+                        </table>
+                    </center>
+                    <hr size="4">
+                </header>
 
-        </ol>
-    </body>
-    <footer></footer>
+                <main>
+                    <fieldset>
+                        <legend><h2> <strong>Internet Basics - Complete Guide</strong></h2></legend>
+                        
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3> <ins>1. Principles of the Internet</ins></h3>
+                                    
+                                    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="25%"> Concept</th>
+                                                <th>Explanation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Need to Share Information</strong></td>
+                                                <td>Computers exchange data through direct links (cables, signals of 1s & 0s)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Problem of Scale</strong></td>
+                                                <td>Many-to-many links become messy → solved by Switches (Local Networks)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Connecting Networks</strong></td>
+                                                <td>Multiple local networks connect using Routers → forms a network of networks (<strong>Internet</strong>)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Finding Devices (Addressing)</strong></td>
+                                                <td>Each device needs a unique IP Address to communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Reliability & Fairness</strong></td>
+                                                <td>Data broken into packets with sender/receiver info, reassembled via <strong>TCP/IP protocol</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- IP Address Section -->
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3> <ins>2. IP Address System</ins></h3>
+                                    
+                                    <blockquote>
+                                        <h4> <u>IPv4 Addressing:</u></h4>
+                                        <ul>
+                                            <li><strong>Format:</strong> 32-bit address system</li>
+                                            <li><strong>Example:</strong> <code>172.217.16.142</code></li>
+                                            <li><strong>Capacity:</strong> ~4.3 billion addresses</li>
+                                            <li><strong>Problem:</strong> <em>Address shortage issue</em></li>
+                                        </ul>
+                                    </blockquote>
+
+                                    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="30%"> IP Type</th>
+                                                <th> Description</th>
+                                                <th width="30%"> Example Range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Public IP</strong></td>
+                                                <td>Globally unique, assigned by ISP, used to access internet</td>
+                                                <td><code>203.194.15.22</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Private IP</strong></td>
+                                                <td>Used inside local networks for internal communication</td>
+                                                <td>
+                                                    <code>192.168.x.x</code><br>
+                                                    <code>10.x.x.x</code><br>
+                                                    <code>172.16-31.x.x</code>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3> <ins>3. MAC Address (Hardware Identifier)</ins></h3>
+                                    
+                                    <center>
+                                        <table border="1" cellpadding="10" width="90%">
+                                            <tr>
+                                                <td width="50%">
+                                                    <h4> <u>Key Features:</u></h4>
+                                                    <ul>
+                                                        <li>Unique 48-bit hardware ID</li>
+                                                        <li>Written in <strong>hexadecimal</strong> format</li>
+                                                        <li>Permanent (unlike IP which can change)</li>
+                                                        <li>Identifies network card physically</li>
+                                                    </ul>
+                                                </td>
+                                                <td width="50%">
+                                                    <h4> <u>Example & Commands:</u></h4>
+                                                    <p><strong>Format:</strong> <code>3C:22:FB:A3:B4:C5</code></p>
+                                                    <p><strong>Find MAC Address:</strong></p>
+                                                    <ul>
+                                                        <li><code>ipconfig /all</code> (Windows)</li>
+                                                        <li><code>getmac /v</code> (Windows)</li>
+                                                        <li><code>ifconfig</code> (Linux/Mac)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3> <ins>4. Port Numbers (Service Identifiers)</ins></h3>
+                                    
+                                    <p><strong> Definition:</strong> 16-bit identifier (0–65535) to specify services running on a device</p>
+
+                                    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="25%"> Port Range</th>
+                                                <th width="35%"> Purpose</th>
+                                                <th width="40%"> Common Examples</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Well-Known Ports<br>(0–1023)</strong></td>
+                                                <td>Standard system services</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>HTTP: 80</li>
+                                                        <li>HTTPS: 443</li>
+                                                        <li>DNS: 53</li>
+                                                        <li>SSH: 22</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Registered Ports<br>(1024–49151)</strong></td>
+                                                <td>Applications & databases</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Node.js: 3000</li>
+                                                        <li>MySQL: 3306</li>
+                                                        <li>MongoDB: 27017</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Dynamic Ports<br>(49152–65535)</strong></td>
+                                                <td>Temporary client connections</td>
+                                                <td><em>Auto-assigned by system</em></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <table border="2" cellpadding="15" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <h3> <ins>5. DNS (Domain Name System)</ins></h3>
+                                    
+                                    <center>
+                                Primary Function: Converts domain names → IP add</h4>
+                                    </center>
+
+                                    <h4> <u>Complete DNS Resolution Process:</u></h4>
+                                    <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="10%">Step</th>
+                                                <th width="30%"> Action</th>
+                                                <th> Detailed Process</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td align="center"><strong>1</strong></td>
+                                                <td><strong>Check Local Cache</strong></td>
+                                                <td>Browser → OS → Router cache lookup</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><strong>2</strong></td>
+                                                <td><strong>Ask Recursive Resolver</strong></td>
+                                                <td>Usually ISP or public DNS (Google 8.8.8.8</mark>)</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><strong>3</strong></td>
+                                                <td><strong>Query DNS Hierarchy</strong></td>
+                                                <td>
+                                                    <ol type="a">
+                                                        <li><strong>Root Servers</strong> → point to TLD servers (e.g., .com)</li>
+                                                        <li><strong>TLD Servers</strong> → point to Authoritative servers</li>
+                                                        <li><strong>Authoritative Server</strong> → gives final IP address</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><strong>4</strong></td>
+                                                <td><strong>Cache & Return</strong></td>
+                                                <td>Resolver caches response & sends IP to browser</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><strong>5</strong></td>
+                                                <td><strong>Connect & Load</strong></td>
+                                                <td>Browser connects to IP (via port 80/443) and loads website</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <br>
+
+                                    <blockquote>
+                                        <h4> <u>DNS in Action Example:</u></h4>
+                                        <center>
+                                            <table border="1" cellpadding="8" cellspacing="0" width="80%">
+                                                <tr>
+                                                    <td align="center"><strong>You Type:</strong><br><code>www.google.com</code></td>
+                                                    <td align="center"><br><strong>DNS Magic</strong></td>
+                                                    <td align="center"><strong>Browser Gets:</strong><br><code>142.250.191.14</code></td>
+                                                </tr>
+                                            </table>
+                                        </center>
+                                    </blockquote>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- Summary Section -->
+                    <center>
+                        <fieldset>
+                            <legend><h3> <strong>Quick Reference Summary</strong></h3></legend>
+                            <table border="2" cellpadding="12" cellspacing="2" width="95%">
+                                <thead>
+                                    <tr>
+                                        <th width="20%"> Component</th>
+                                        <th width="30%"> Purpose</th>
+                                        <th width="25%"> Key Points</th>
+                                        <th width="25%"> Example/Range</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>IP Address</strong></td>
+                                        <td>Device identification</td>
+                                        <td>Public vs Private</td>
+                                        <td><code>192.168.1.1</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>MAC Address</strong></td>
+                                        <td>Hardware identification</td>
+                                        <td>Permanent & unique</td>
+                                        <td><code>3C:22:FB:A3:B4:C5</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Port Numbers</strong></td>
+                                        <td>Service identification</td>
+                                        <td>0-65535 range</td>
+                                        <td><code>HTTP:80, HTTPS:443</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DNS</strong></td>
+                                        <td>Domain to IP conversion</td>
+                                        <td>Hierarchical system</td>
+                                        <td><code>google.com → IP</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </center>
+
+                </main>
+
+                <br><br>
+                <footer>
+                    <hr size="3">
+                    <center>
+                        <p><strong>© 2025 Web Development Course</strong></p>
+                        <p><small><em>"Understanding the Internet Foundation"</em> </small></p>
+                    </center>
+                </footer>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
